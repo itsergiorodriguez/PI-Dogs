@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  max-width: 350px;
+
+}
+
+.cardName {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Stencil Std Bold';
+}
+
+.cardAtributos {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: 'Stencil Std Bold';
+}
+
+.cardTitle {
+
+  font-family: 'Stencil Std Bold';
+}
+
+.cardDetails {
+
+  margin-top: 20px;
+  font-family: 'Stencil Std Bold';
+}
+
+.highlightedText {
+  font-size: 1.2em;
+  /* Ajusta el tamaño del texto resaltado según tus necesidades */
+  font-weight: normal;
+  /* Ajusta el peso de la fuente según tus necesidades */
+}
+
+@font-face {
+  font-family: 'Stencil Std Bold';
+  src: url('../../Utils/Fonts/StardosStencil-Bold.ttf');
+}

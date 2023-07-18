@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centrado vertical */
+  height: 100vh;
+  /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  border: solid;
+
+}
+
+.h1 {
+  position: absolute;
+  font-size: 5vw;
+  color: rgb(194, 151, 96);
+  top: 65%;
+  /* Ajusta la distancia desde la parte superior de la página */
+  left: 60%;
+  transform: translateX(-50%);
+  font-family: 'Stencil Std Bold', cursive;
+}
+
+.logoImage {
+
+  background-position: center;
+
+}
+
+.button {
+  position: absolute;
+  margin-left: 60%;
+  width: 15%;
+  height: 6%;
+  font-family: 'Stencil Std Bold', cursive;
+  font-size: 120%;
+  border-radius: 20px;
+  border: solid black 1px;
+  background-color: rgb(194, 151, 96);
+  transform: 'translate(-50%, -50%)',
+}
+
+.button:hover {
+  box-shadow: 0 0 0 15px rgba(178, 182, 160, 0.754);
+  
+
+}
+
+
+@font-face {
+  font-family: 'Stencil Std Bold';
+  src: url('../../Utils/Fonts/StardosStencil-Bold.ttf');
+
+}
+
+@media screen and (max-width: 768px) {
+  .custom-h1 {
+    font-size: 4vw;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-h1 {
+    font-size: 3vw;
+    
+  }
+}

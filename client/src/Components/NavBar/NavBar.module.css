@@ -1,0 +1,52 @@
+.container {
+  background-color: bisque;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("../../Utils/Imagenes/Patitas02.jpg");
+  border: 2px solid rgb(14, 12, 11);
+  border-radius: 10px;
+  height: 10.5rem;
+}
+
+.navbar a {
+  font-size: 20px;
+  font-family: 'Stencil Std Bold';
+  box-shadow: 0 0 10px rgba(236, 146, 27, 0.8);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(75, 60, 21);
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ffcc00;
+  color: #ffffff;
+  box-shadow: 0 0 0px rgba(236, 146, 27, 1);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30rem;
+  margin-left: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logoImage {
+  width: 9rem;
+  border-radius: 100px;
+}
+
+@font-face {
+  font-family: 'Stencil Std Bold';
+  src: url('../../Utils/Fonts/StardosStencil-Bold.ttf');
+}
