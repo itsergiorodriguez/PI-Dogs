@@ -36,59 +36,59 @@ const Home = () => {
   );
   const handleOrderName = (event) => {
     dispatch(orderByName(event.target.value));
-    dispatch(setCurrentPage(1));
     setOrder(`Ordered ${event.target.value}`);
     setFilter({
       ...filter,
       name: event.target.value,
     });
+    dispatch(setCurrentPage(1));
+  
   };
 
   const handleOrderWeight = (event) => {
     dispatch(orderByWeight(event.target.value));
-    dispatch(setCurrentPage(1));
     setOrder(`Ordered ${event.target.value}`);
     setFilter({
       ...filter,
       weight: event.target.value,
     });
+    setCurrentPage(1);
   };
 
   const handleOrderWeight2 = (event) => {
     dispatch(orderByWeight(event.target.value));
-    dispatch(setCurrentPage(1));
     setOrder(`Ordered ${event.target.value}`);
     setFilter({
       ...filter,
       aver: event.target.value,
     });
+    setCurrentPage(1);
   };
 
   const handleFilterByOrigin = (event) => {
     dispatch(filterByOrigin(event.target.value));
-    dispatch(setCurrentPage(1));
     setOrder(`Ordered ${event.target.value}`);
     setFilter({
       ...filter,
       origin: event.target.value,
     });
+    setCurrentPage(1);
   };
 
   const handleFilterByTemper = (event) => {
     setTemperament(event.target.value);
     dispatch(filterByTemper(event.target.value));
-    dispatch(setCurrentPage(1));
     setOrder(`Ordered ${event.target.value}`);
     setFilter({
       ...filter,
       temperament: event.target.value,
     });
+    setCurrentPage(1);
   };
 
   const handleClick = (event) => {
     event.preventDefault();
     dispatch(getDogsAll());
-    dispatch(setCurrentPage(1));
     setFilter({
       name: "name",
       origin: "All",
@@ -96,6 +96,7 @@ const Home = () => {
       weight: "weight",
       aver: "aver",
     });
+    setCurrentPage(1);
   };
 
   useEffect(() => {

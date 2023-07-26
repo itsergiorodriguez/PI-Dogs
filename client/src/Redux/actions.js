@@ -107,8 +107,7 @@ export const filterByOrigin = (payload) => {
 };
 
 export const filterByTemper = (payload) => {
-  console.log(payload);
-  return {
+   return {
     type: FILTER_BY_TEMPER,
     payload,
   };

@@ -1,31 +1,26 @@
 .pagination {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-  }
-  
-  .pagination-item {
-    margin-right: 5px;
-  }
-  
-  .pagination-button {
-    background-color: goldenrod;
-    color: white;
-    font-family: 'Stencil Std Bold';
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-   @font-face {
-    font-family: 'Stencil Std Bold';
-    src: url('../../Utils/Fonts/StardosStencil-Bold.ttf');
-         
-  }
-  
-  @media screen and (max-width: 768px) {
-    .custom-h1 {
-      font-size: 4vw; /* Tamaño de la fuente en unidades vw para tamaños de pantalla más pequeños */
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.paginationItem {
+  margin-right: 5px;
+}
+
+.paginationButton {
+  background-color: goldenrod;
+  color: white;
+  font-family: "Stencil Std Bold";
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-color: aliceblue;
+}
+
+.activeButton {
+  background-color:  rgb(75, 60, 21);
+  box-shadow: 0 0 10px 3px rgb(235, 234, 231);
+}

@@ -26,12 +26,11 @@ const Detail = () => {
   let temperaments = dog.temperament;
   if (dogsDetail.Temperaments && dogsDetail.Temperaments.length > 0) {
     temperaments = dogsDetail.Temperaments[0].name;
-  }
+    }
 
   return (
     <div className={styles.container}>
-      {console.log(dog?.height.metric)}
-      <div className={styles.buttonContainer}>
+        <div className={styles.buttonContainer}>
         <Link to="/home">
           <button className={styles.button}>🡸 Volver</button>
         </Link>

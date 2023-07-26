@@ -135,7 +135,7 @@ const reducer = (state = initialState, action) => {
     case FILTER_BY_ORIGIN:
       let filteredDogs;
       if (action.payload === "All") {
-        filteredDogs = state.dogs; // Si el origen es "All", muestra todos los perros
+        filteredDogs = state.dogs; 
       } else if (action.payload === "api") {
         filteredDogs = state.dogs.filter((dog) => !dog.created); // Filtra los perros desde la API
       } else if (action.payload === "created") {

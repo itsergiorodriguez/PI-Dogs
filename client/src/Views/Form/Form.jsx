@@ -5,6 +5,7 @@ import { createNewDog, getAllTemperaments } from "../../Redux/actions";
 import Validate from "../../Components/Validate/Validate";
 import { Navigate, Link } from "react-router-dom";
 import NavBar from "../../Components/NavBar/NavBar";
+
 const Form = () => {
   const dispatch = useDispatch();
   const temperaments = useSelector((state) => state.temperaments);
@@ -54,9 +55,10 @@ const Form = () => {
   };
 
   const handleDelete = (temp) => {
-    setInputs({
+      setInputs({
       ...inputs,
-      temperament: inputs.temperament.filter((inst) => inst !== temp),
+       temperament: inputs.temperament.filter((inst) => inst !== temp),
+      
     });
   };
 
