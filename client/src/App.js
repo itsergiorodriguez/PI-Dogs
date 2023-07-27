@@ -5,7 +5,7 @@ import Form from "./Views/Form/Form";
 import Landing from "./Views/Landing/Landing";
 import Detail from "./Views/Detail/Detail";
 import axios from "axios";
-axios.defaults.baseURL="https://pi-dogs.railway.internal/";
+axios.defaults.baseURL="https://https://pi-dogs-production-17aa.up.railway.app/";
 
 function App() {
  
